@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+}
+#navbar{
+    background: #fff;
+
+}
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+#logo span{
+    color: blue;
+}
+/* .navbar-toggler{
+    color: #ffa500;
+} */
+.navbar-nav{
+margin-left:20px ;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background:#ffa500;
+    color: white;
+}
+/* navbar end */
+/* next part open */
+.home{
+    width: 100%;
+    height: 90vh;
+    background-image:url("home1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+.home .content{
+    text-align: center;
+    padding-top:200px ;
+}
+.home .content h5{
+    color:white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    
+  
+}
+/* h1 use this code ok */
+/* .home .content h1{
+    color:white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black ;
+    margin-top:5px ;
+}  */
+.changecontect::after{
+    content: '';
+    color: aqua;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content:"Hello";}
+    10%{content:"Welcom";}
+    20%{content:"To";}
+    30%{content:"Unique";}
+    40%{content:"Hotel";}
+    50%{content:"Contact";} 
+    60%{content:"+977-9809559560";}
+    70%{content:"Thank";}
+    80%{content:"You";}
+}
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom:30px ;
+    margin-top: 5px;
+}
+
+
+@media (max-width:450px){
+    .home{
+        background-position: 50%
+    }
+
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 38px;
+    }
+    /* .home .content h1{
+        font-size: 38px;
+    } */
+    .home .content p{
+        font-size: 13px;
+    }
+
+
+}
+
+
+
+/* image scroll code */
+
+/* .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .home .text {
+    max-width: 50%;
+    color: rgb(39, 245, 7);
+    margin: 20% 0 0 10%;
+  }
+  
+  .home h1 {
+    font-size: 80px;
+    font-weight: 400;
+  }
+  
+  .home p {
+    font-weight: 400;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin: 50px 0 0 50px;
+  }
+  
+  button {
+    padding: 20px 40px;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .home button {
+    margin-left: 50px;
+  }
+  
+  .home .image_item {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .home .image_item img {
+    width: 140px;
+    height: 94px;
+    margin: 10px;
+    transition: 0.5s;
+  }
+  
+  .home .image_item img.active {
+    border: 2px solid white;
+  }
+  
+  .home .box .text {
+    position: relative;
+  }
+  
+  .home .box .text::after {
+    position: absolute;
+    content: 'H';
+    font-size: 500px;
+    top: -120%;
+    font-weight: bold;
+    opacity: 0.1;
+  }
+   */
+   /* Room Booking css */
+   /* .grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1rf);
+    grid-gap: 28px;
+   }  */
+   .input{
+    outline: none;
+    border: none;
+    width: 100%;
+  }
+.booking{
+  padding: 40px 0;
+  background: #282834;
+  color: #fff;
+
+}
+
+
+h1{
+  font-family: sans-serif;
+}
+.booking h1{
+  font-size: 28px;
+}
+.booking h1 span{
+  color: #ffa500;
+ }
+ .booking input{
+  padding: 20px;
+ }
+ .booking input:nth-last-child(1){
+  background: #7fc142;
+  color: #fff;
+ 
+}
+
+ /*food items section  */
+
+ .main-txt h1{
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+ }
+ .main-txt h1 span{
+  color: green;
+ }
+ .food .card{
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+ }
+ .food .card img{
+  border-radius: 3px;
+ }
+ .food .card .card-body{
+  background: transparent;
+ }
+ .food .card .card-body h3{
+  font-size: 25px;
+  font-weight: 600;
+ }
+ .food .card .card-body p{
+  font-size: 15px;
+ }
+ .food .card .card-body i{
+  color: #ffa500;
+ }
+ .star i{
+  font-size: 15px;
+ }
+ .food .card .card-body h6{
+  font-size: 20px;
+ }
+ .food .card .card-body a{
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: white;
+  border-radius: 5px;
+ }
+
+
+
+ /* gallary Section css */
+ .gallary{
+  margin-top: 10px;
+ }
+ .gallary .card{
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px; 
+  cursor: pointer;
+ }
+ .gallary .card img{
+  border-radius: 10px;
+  transition: 0.5s;
+ }
+.gallary .card img:hover{
+  transform: scale(1.1);
+}
+ /*services section css  */
+ .services{
+  background: #f9f9f9;
+  margin-top:  50px;
+ }
+ .services .card{
+  box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+ }
+ .services .card i{
+  font-size: 80px;
+  text-align: center;
+  color: aqua;
+  margin-top: 20px;
+
+ }
+ .services .card .card-body h3{
+  font-weight: 600;
+ }
+ .services .card .card-body{
+  align-items: center;
+ }
+
+ /* about section */
+ .about{
+   margin-top:50px ;
+  padding: 50px;
+  background: #f9f9f9;
+ }
+ .about .card{
+    border-radius: 10px;
+ }
+ .about .card img{
+  border-radius: 10px;
+ }
+ .about h2{
+  font-weight: 600;
+  letter-spacing: 1px;
+ }
+ .about p{
+  font-weight: 500;
+ }
+ #about-btn{
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background: #ffa500;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 550;
+  transition: 0.5s ease;
+  cursor: pointer;
+ }
+ #about-btn:hover{
+  width: 170px;
+ }
+ @media (max-width:765px){
+  .about{
+    padding:0;
+  }
+ }
+
+ 
