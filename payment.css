@@ -1,0 +1,89 @@
+
+ @import url('https://fonts.googleapis.com/css2?fmaily=Poppins:wght@100,300,400,500,600,&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    transform: all 0.2s linear;
+ }
+ .conatainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+   background: #fff;
+ }
+ .conatainer form{
+    padding: 20px;
+    width: 700px;
+    background: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+ .conatainer form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.conatainer form .row .col{
+    flex:1 1 250px;
+}
+.col .pay{
+    font-size: 20px;
+    color: #7d5e94;
+    padding-bottom: 5px;
+}
+.col .inputbox{
+    margin: 15px 0;
+}
+.col .inputbox label{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.conatainer form .row .col .inputbox input{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 19px;
+    text-transform: none;
+ }
+.col .inputbox input:focus{
+    border: 1px solid #000;
+}
+.col .flex{
+    display: flex;
+    gap: 15px;
+}
+.col .flex .inputbox{
+    flex: 1 1;
+    margin-top: 5px;
+}
+col .inputbox img{
+    height: 35px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #fff);
+}
+.conatainer form .submit_btn{
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    color: black;
+    margin-top: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: greenyellow;
+    text-transform: uppercase;
+    
+}
+.conatainer form .submit_btn:hover{
+    background: yellow;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
