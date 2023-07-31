@@ -77,7 +77,7 @@ margin-left:20px ;
 }
 @keyframes changetext{
     0%{content:"Hello";}
-    10%{content:"Welcom";}
+    10%{content:"Welcome";}
     20%{content:"To";}
     30%{content:"Unique";}
     40%{content:"Hotel";}
