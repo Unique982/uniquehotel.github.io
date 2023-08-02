@@ -257,6 +257,7 @@ h1{
  .food .card .card-body h3{
   font-size: 25px;
   font-weight: 600;
+     align-item:center
  }
  .food .card .card-body p{
   font-size: 15px;
@@ -266,9 +267,11 @@ h1{
  }
  .star i{
   font-size: 15px;
+     align-item:center;
  }
  .food .card .card-body h6{
   font-size: 20px;
+     align-item:center;
  }
  .food .card .card-body a{
   padding: 10px;
