@@ -263,10 +263,10 @@ h1{
  .food .card .card-body p{
   font-size: 15px;
  }
- .food .card .card-body star{
+.food .card .card-body .star{
   color: #ffa500;
-     text-align:center
-     font-size: 30px;
+  text-align: center;
+  font-size: 30px;
  }
  .food .card .card-body h6{
   font-size: 20px;
