@@ -257,20 +257,20 @@ h1{
  .food .card .card-body h3{
   font-size: 25px;
   font-weight: 600;
+      text-align:center
     
  }
  .food .card .card-body p{
   font-size: 15px;
  }
- .food .card .card-body i{
+ .food .card .card-body star{
   color: #ffa500;
- }
- .star i{
-  font-size: 15px;
-    
+     text-align:center
+     font-size: 30px;
  }
  .food .card .card-body h6{
   font-size: 20px;
+      text-align:center
     
  }
  .food .card .card-body a{
@@ -280,9 +280,20 @@ h1{
   color: white;
   border-radius: 5px;
  }
+.food .card .card-body #btn{
+  padding: 5px 30px;
+  border: 1px solid;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display:block ;
+  margin: 0 auto;
+ }
 
-
-
+/*end food item  */
  /* gallary Section css */
  .gallary{
   margin-top: 10px;
