@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;500;600;700;800;900;&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url('image.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    
+    }
+    .container{
+        width: 420px;
+        background:transparent;
+        border: 2px  solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rbga(0, 0, 0, .2);
+        color: #fff;
+        border: 10px;
+        padding: 30px 40px;
+    }
+    .container h1{
+        font-size: 36px;
+        text-align: center;
+
+    }
+    .container .input-box{
+        position: relative;
+        width: 100%;
+        height: 50px;
+      
+        margin: 30px 0;
+    }
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, .2);
+        border-radius: 40px;
+        
+        color: #fff;
+        font-size: 16px;
+        padding: 20px 45px 20px 20px;
+    }
+    .input-box input::placeholder
+    {
+     color: #fff;
+     
+    }
+    .input-box i{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+
+        
+    }
+    .container .remember-forgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+
+    }
+    .remember-forgot label input{
+        accent-color:#fff;
+        margin-right: 3px;
+
+    }
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.container .btn{
+    width: 100%;
+    height: 40px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba();
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+}
+.container .register{
+    font-size: 14.5px;
+    color: #fff;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+    
+
+
+
+
+</style>
+<script>
+    function myfunction(){
+        var x= document.getElementById("pass");
+        if(x.type === "password"){
+            x.type = "text"
+        }
+         else{
+            x.type ="password";
+         }
+    }
+    function validate(){
+        var password = document.getElementById("pass");
+        var lenght = document.getElementById("length");
+        if(password.value.length >= 6){
+            alert("Login Succesfull");
+            window.location.assign('payment.html');
+            return false;
+
+        } else{
+            alert("Login failed");
+        }
+    }
+</script>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" id="email" name="" placeholder="Enter you Email" required><i class='bx bx-envelope' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="pass" name="" placeholder="Enter your password" required><i class='bx bxs-lock-alt'></i>
+
+
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" onclick="myfunction()">Remeber me</label>
+                <label><a href="#forget.html">Forgot password</a></label>
+
+            </div>
+            <input type="submit" class="btn" name="" value="Login" onclick="validate()">
+            <div>
+                <p id="length"></p>
+            </div>
+               <div class="register">
+                <p>Don't have an account? <a href="#">Register</a></p>
+                 
+            </div>  
+               <div>
+               
+               </div>     
+        </form>
+
+    </div>
+    
+</body>
+</html>
