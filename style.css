@@ -295,19 +295,19 @@ h1{
 
 /*end food item  */
  /* gallary Section css */
- .gallary{
+ .gallery{
   margin-top: 10px;
  }
- .gallary .card{
+ .gallery .card{
   border-radius: 10px;
   box-shadow: rgba(0,0,0,0.1) 0px 4px 12px; 
   cursor: pointer;
  }
- .gallary .card img{
+ .gallery .card img{
   border-radius: 10px;
   transition: 0.5s;
  }
-.gallary .card img:hover{
+.gallery .card img:hover{
   transform: scale(1.1);
 }
  /*services section css  */
