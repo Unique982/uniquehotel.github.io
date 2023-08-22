@@ -192,8 +192,8 @@
 </div>
     <!-- end html code  -->
    <!--js code herer  -->
-    <script>
-        const form = document.getElementById('form');
+ <script>
+      const form = document.getElementById('form');
         const username = document.getElementById('username');
         const firstname = document.getElementById('fristname');
         const email = document.getElementById('email');
@@ -231,10 +231,10 @@ const SuccessMgs =(usernameVal) => {
     }
 }
 // email
- const isEmail =(emailval) =>{
+ const isEmail =(emailVal) =>{
     var atSymbol = emailVal.indexOf('@');
     if(atSymbol < 1) return false;
-    var dot = emailVal.length.lastIndexOf('.');
+    var dot = emailVal.lastIndexOf('.');
     if(dot <= atSymbol + 2) return false;
     if(dot === emailVal.length -1) return false;
     return true;
@@ -267,7 +267,7 @@ function Validate(){
         setErrorMsg(fristname, 'Frist Name cannot be blank');
 
     } 
-    else if(usernameVal.length <=3){
+    else if(fristnameVal.length <=3){
         setErrorMsg(fristname, 'min 3 char');
 
     }
@@ -282,12 +282,12 @@ function Validate(){
         setErrorMsg(email, 'Email cannot be blank');
 
     } 
-    else if(emailVal){
-        setErrorMsg(email, 'min 6 char');
+    else if(!isEmail(emailVal)){
+        setErrorMsg(email, 'email is not valid');
 
     }
     else{
-        setSuccessMsg(emali);
+        setSuccessMsg(email);
     }
 
 
@@ -306,7 +306,7 @@ function Validate(){
 
     // cpassword
     if(cpasswordVal === ""){
-        setErrorMsg(cpassword, 'Confirmpassword cannot be blank');
+        setErrorMsg(cpassword, 'Confirm password cannot be blank');
 
     } 
     else if(passwordVal != cpasswordVal){
@@ -336,6 +336,6 @@ function setSuccessMsg(input){
 }
 
 
-    </script>
+ </script>
 </body>
 </html>
