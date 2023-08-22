@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+ 
+ 
+</head>
+<!-- css code -->
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', serif;
+     }
+     body{
+      background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+         background: url('image.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+     }
+     .conatiner{
+      background-color: #fefefe;
+        border-radius: 10px;
+        width: 550px;
+         max-width: 100%; 
+        overflow: hidden;
+        
+        background:transparent;
+        border: 2px  solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 10px rbga(0, 0, 0, .2);
+        
+      
+     }
+     .form-content{
+      background-color: rgb(108, 99, 117);
+      padding: 5px 0;
+     }
+     .form-content h2 {
+        color: #fff;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+     }
+     .form{
+        padding: 40px;
+     }
+     .form-control{
+        margin-bottom: 30px;
+        position: relative;
+     }
+     .form-control label{
+        display: inline-block;
+        margin-bottom: 5px;
+     }
+     .form-control input{
+        width: 100%;
+        border: 2px solid #fefefe;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 12px;
+        display: block;
+     }
+     .form-control input:focus{
+        outline: 0;
+        border-color:#777 ;
+     }
+     .form-control.success input{
+        border-color: #39df7e;
+     }
+     .form-control.error input{
+        border-color: #df3434;
+     }
+     .form-control i{
+      position: absolute;
+      right: 12px;
+      top: 40px;
+    visibility: hidden;
+     }
+     .form-control.error small{
+        font-size: 20px;
+      visibility: visible;
+     }
+     .form-control small{
+      color: #df3434;
+      position: absolute;
+      left: 0;
+      visibility:hidden ;
+     }
+.form-control.success i.fa-check-circle{
+   color:#39df7e ;
+   visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+   color: #df3434;
+   visibility: visible;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba();
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn:hover{
+   background: #282b29;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-decoration:underline;
+}
+.group span a{
+    color:white;
+    position: relative;
+    top: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.group a:focus{
+    text-decoration: underline;
+}
+</style>
+<body>
+   <!-- html code start -->
+   <div class="conatiner">
+    <div class="form-content">
+    <h2>Register Form</h2>
+    </div>
+
+<form action="" class="form" id="form">
+    <div class="form-control">
+        <label>User Name:</label>
+        <input type="text" name="" id="username" placeholder="Enter Your Frist Name"  autocomplete="off" >
+         <i class="fa fa-check-circle"></i>
+         <i class="fa fa-exclamation-circle"></i>
+         <small>Error Message</small>
+    </div>
+    <div class="form-control">
+        <label>Frist Name:</label>
+        <input type="text" name="" id="fristname" placeholder="Enter Your Last Name" autocomplete="off" >
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error Message</small>
+    </div>
+    <div class="form-control">
+        <label>Email:</label>
+        <input type="email" name="" id="email" placeholder="Enter Your Email" autocomplete="off" >
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error Message</small>
+    </div>
+    <div class="form-control">
+        <label>Password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter Your Password" autocomplete="off" >
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error Message</small>
+    </div>
+    <div class="form-control">
+        <label>Confirm Password:</label>
+        <input type="password" name="" id="cpassword" placeholder="Confirm Password" autocomplete="off" >
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+        <small>Error Message</small>
+    </div>
+    <input type="submit" value="Submit" class="btn">
+    <div class="group">
+        Already a member?
+        <span><a href="login.html">Login</a></span>
+        </div>
+</form>
+</div>
+    <!-- end html code  -->
+   <!--js code herer  -->
+    <script>
+        const form = document.getElementById('form');
+        const username = document.getElementById('username');
+        const firstname = document.getElementById('fristname');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const cpassword = document.getElementById('cpassword');
+
+// submit
+form.addEventListener('submit', (event) =>{
+    event.preventDefault();
+    Validate();
+
+}
+)
+
+const sendData =(usernameVal, sRate, Count) => {
+    if(sRate === Count){
+        swal("Hello" +usernameVal , "Yourare Registered" , "success");
+
+    }
+}
+const SuccessMgs =(usernameVal) => {
+    let formContr = document.getElementsByClassName('form-control');
+    var Count = formContr.length - 1;
+    for(var i=0; i<formContr.length; i++){
+        if(formContr[i].className === "form-control success"){
+            var sRate= 0 + i;
+     console.log(sRate);
+     sendData(usernameval, sRate, Count);
+
+        }
+        else{
+            return false;
+
+        }
+    }
+}
+// email
+ const isEmail =(emailval) =>{
+    var atSymbol = emailVal.indexOf('@');
+    if(atSymbol < 1) return false;
+    var dot = emailVal.length.lastIndexOf('.');
+    if(dot <= atSymbol + 2) return false;
+    if(dot === emailVal.length -1) return false;
+    return true;
+ }
+
+//  function created on validate()
+
+function Validate(){
+    const usernameVal = username.value.trim();
+    const fristnameVal = fristname.value.trim();
+    const emailVal = email.value.trim();
+    const passwordVal = password.value.trim();
+    const cpasswordVal = cpassword.value.trim();
+
+    // username validate
+    if(usernameVal === ""){
+        setErrorMsg(username, 'Username cannot be blank');
+
+    } 
+    else if(usernameVal.length <=6){
+        setErrorMsg(username, 'min 6 char');
+
+    }
+    else{
+        setSuccessMsg(username);
+    }
+
+    // frist name 
+    if(fristnameVal === ""){
+        setErrorMsg(fristname, 'Frist Name cannot be blank');
+
+    } 
+    else if(usernameVal.length <=3){
+        setErrorMsg(fristname, 'min 3 char');
+
+    }
+    else{
+        setSuccessMsg(fristname);
+    }
+
+
+    // email
+
+    if(emailVal === ""){
+        setErrorMsg(email, 'Email cannot be blank');
+
+    } 
+    else if(emailVal){
+        setErrorMsg(email, 'min 6 char');
+
+    }
+    else{
+        setSuccessMsg(emali);
+    }
+
+
+    // password
+    if(passwordVal === ""){
+        setErrorMsg(password, 'Password cannot be blank');
+
+    } 
+    else if(passwordVal.length <=8){
+        setErrorMsg(password, 'min 8 char');
+
+    }
+    else{
+        setSuccessMsg(password);
+    }
+
+    // cpassword
+    if(cpasswordVal === ""){
+        setErrorMsg(cpassword, 'Confirm password cannot be blank');
+
+    } 
+    else if(passwordVal != cpasswordVal){
+        setErrorMsg(cpassword, 'Not Matched!');
+
+    }
+    else{
+        setSuccessMsg(cpassword);
+    }
+    SuccessMgs(usernameVal);
+}
+
+// second function created error msgs 
+
+function  setErrorMsg(input, errormsgs){
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+    formControl.className = "form-control error";
+    small.innerText = errormsgs; 
+
+
+}
+//  function 
+function setSuccessMsg(input){
+    const formContr = input.parentElement;
+    formContr.className = "form-control success";
+}
+
+
+    </script>
+</body>
+</html>
